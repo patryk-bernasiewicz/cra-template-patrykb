@@ -32,6 +32,6 @@
     "prettier-eslint": "^13.0.0"
   },
   "scripts": {
-    "prepare": "husky prepare"
+    "prepare": "npx husky prepare"
   }
 }
