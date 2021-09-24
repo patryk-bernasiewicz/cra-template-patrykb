@@ -1,37 +1,43 @@
 {
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
-  },
-  "devDependencies": {
-    "@storybook/addon-actions": "^6.3.8",
-    "@storybook/addon-essentials": "^6.3.8",
-    "@storybook/addon-links": "^6.3.8",
-    "@storybook/node-logger": "^6.3.8",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.8",
-    "@typescript-eslint/eslint-plugin": "^4.31.0",
-    "@typescript-eslint/parser": "^4.31.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-jest": "^24.4.0",
-    "eslint-plugin-react": "^7.25.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.4.0",
-    "prettier-eslint": "^13.0.0"
-  },
-  "scripts": {
-    "prepare": "npx husky prepare"
+  "package": {
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.11.4",
+      "@testing-library/react": "^11.1.0",
+      "@testing-library/user-event": "^12.1.10",
+      "@types/jest": "^26.0.15",
+      "@types/node": "^12.0.0",
+      "@types/react": "^17.0.0",
+      "@types/react-dom": "^17.0.0",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-scripts": "4.0.3",
+      "typescript": "^4.1.2",
+      "web-vitals": "^1.0.1"
+    },
+    "devDependencies": {
+      "cross-env": "^7.0.3",
+      "@storybook/addon-actions": "^6.3.8",
+      "@storybook/addon-essentials": "^6.3.8",
+      "@storybook/addon-links": "^6.3.8",
+      "@storybook/node-logger": "^6.3.8",
+      "@storybook/preset-create-react-app": "^3.2.0",
+      "@storybook/react": "^6.3.8",
+      "@typescript-eslint/eslint-plugin": "^4.31.0",
+      "@typescript-eslint/parser": "^4.31.0",
+      "eslint": "^7.32.0",
+      "eslint-plugin-jest": "^24.4.0",
+      "eslint-plugin-react": "^7.25.1",
+      "eslint-plugin-react-hooks": "^4.2.0",
+      "husky": "^7.0.2",
+      "lint-staged": "^11.1.2",
+      "prettier": "^2.4.0",
+      "prettier-eslint": "^13.0.0"
+    },
+    "scripts": {
+      "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
+      "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
+      "prepare": "npx husky install",
+      "pre-commit": "cross-env FORCE_COLOR=1 lint-staged"
+    }
   }
 }

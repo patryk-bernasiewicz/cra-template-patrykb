@@ -9,11 +9,13 @@ This is my first very own CRA template. I figured I spend too much time setting 
 This template includes following features:
 
 - TypeScript
-- Eslint
+- Eslint (custom instance, not the React's default one)
 - Prettier
 - Husky
 - lint-staged
 - Storybook
+
+This template also uses `cross-env` in order to ensure all operating systems and shells will display colorized messages with lint-staged and Husky.
 
 ## Installation
 
