@@ -17,6 +17,8 @@ This template includes following features:
 
 This template also uses `cross-env` in order to ensure all operating systems and shells will display colorized messages with lint-staged and Husky.
 
+It also has an explicit definition of `babel-loader` to fix the issue with Storybook where it would require an earler version of this library, causing conflicts with the version shipped with CRA.
+
 ## Installation
 
 To use this template, simply run this command in your command line tool:
