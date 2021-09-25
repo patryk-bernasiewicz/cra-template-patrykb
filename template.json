@@ -30,8 +30,8 @@
     "scripts": {
       "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
       "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
-      "prepare": "npx sb init --type react && npx husky install",
-      "pre-commit": "cross-env FORCE_COLOR=1 lint-staged"
+      "pre-commit": "cross-env FORCE_COLOR=1 lint-staged",
+      "prepare": "npx husky install"
     }
   }
 }

@@ -17,7 +17,13 @@ This template includes following features:
 
 This template also uses `cross-env` in order to ensure all operating systems and shells will display colorized messages with lint-staged and Husky.
 
-It also has an explicit definition of `babel-loader` to fix the issue with Storybook where it would require an earler version of this library, causing conflicts with the version shipped with CRA.
+At one point I also wanted it to contain Storybook, but with its CLI nowadays it's super-easy to install it manually. :) And having it pre-installed with the template caused packages conflict (mainly with babel-loader and webpack).
+
+To install Storybook in your CRA project, simply use the following command:
+
+```
+npx sb init --type react
+```
 
 ## Installation
 
