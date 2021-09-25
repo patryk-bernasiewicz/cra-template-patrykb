@@ -15,14 +15,7 @@
       "web-vitals": "^1.0.1"
     },
     "devDependencies": {
-      "babel-loader": "8.1.0",
       "cross-env": "^7.0.3",
-      "@storybook/addon-actions": "^6.4.0-beta.0",
-      "@storybook/addon-essentials": "^6.4.0-beta.0",
-      "@storybook/addon-links": "^6.4.0-beta.0",
-      "@storybook/node-logger": "^6.4.0-beta.0",
-      "@storybook/preset-create-react-app": "^3.2.0",
-      "@storybook/react": "^6.3.8",
       "@typescript-eslint/eslint-plugin": "^4.31.0",
       "@typescript-eslint/parser": "^4.31.0",
       "eslint": "^7.32.0",
@@ -37,7 +30,7 @@
     "scripts": {
       "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
       "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
-      "prepare": "npx husky install",
+      "prepare": "npx sb init --type react && npx husky install",
       "pre-commit": "cross-env FORCE_COLOR=1 lint-staged"
     }
   }
